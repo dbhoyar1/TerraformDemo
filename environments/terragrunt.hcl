@@ -7,11 +7,11 @@ remote_state{
     
     }
     config ={
-        bucket = "terraform-grunt-state-bucket-first-pro"
+        bucket = "terraform-grunt-state-bucket-first-pro111"
         key="us-east-1/${path_relative_to_include()}/terraform.tfvars"
         region = "us-east-1"
         encrypt=false
-        dynamodb_table="cources-lack-table" //for storing lock files
+        dynamodb_table="cources-lack-table11" //for storing lock files
         profile="default"
     }
 }
