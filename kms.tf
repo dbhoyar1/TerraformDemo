@@ -4,7 +4,7 @@ providers = {
   aws = aws.src
  }
 source = "./module_kms"
-alias = "alias/ec2key"
+alias = "alias/ec2key1"
 description = "EC2 instance encrypt key"
 deletion_window_in_days = 10
 }
