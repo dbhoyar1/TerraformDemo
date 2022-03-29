@@ -1,6 +1,6 @@
-output "security_group_name" {
+output "security_grp_name" {
     description = "Name of Security Group"
-    value = var.security_group_name
+    value = var.security_grp_name
 }
 
 output "security_group_id" {
