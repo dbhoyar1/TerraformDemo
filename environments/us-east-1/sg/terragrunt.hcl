@@ -6,20 +6,20 @@ terraform{
     source = "../../..//module_sg"
 }
 
-inputs={
-    security_grp_name = "alb_sg"
-    vpc_id = "vpc-434"
+inputs = {
+    security_group_name = "alb_sg"
+    vpc_id = "vpc-bbf694d1"
 
-    security_group_rules ={
-        rule01={
+    security_group_rules       = {
+        rule01 = {
             description = "HTTP allow ingress"
-            type ="ingress"
-            protocol = "tcp"
-            from_port=80
-            to_port=80
-            addresses={
-                type="cidr_blocks"
-                cidr_blocks=["0.0.0.0/0"]
+            direction   = "ingress"
+            protocol    = "tcp"
+            from_port   = 80
+            to_port     = 80
+            addresses   = {
+            type        = "cidr_blocks"
+            cidr_blocks = ["0.0.0.0/0"]
             }
         },
         rule02 = {
